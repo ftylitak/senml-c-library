@@ -17,11 +17,11 @@
 #include <cbor.h>
 #include <senml_logging.h>
 
-SenMLRecord::SenMLRecord(const char* name): _name(name), _unit(SENML_UNIT_NONE), _time(NAN), _updateTime(0)
+SenMLRecord::SenMLRecord(const char* name): _time(NAN), _updateTime(0), _name(name), _unit(SENML_UNIT_NONE)
 {
 }
 
-SenMLRecord::SenMLRecord(const char* name, SenMLUnit unit): _name(name), _unit(unit), _time(NAN), _updateTime(0)
+SenMLRecord::SenMLRecord(const char* name, SenMLUnit unit): _time(NAN), _updateTime(0), _name(name), _unit(unit)
 {
 }
 

@@ -172,7 +172,7 @@ unsigned int SenMLCborParser::processArray()
 {
     const bool is_indefinite = (peekChar() == (CBOR_ARRAY | CBOR_VAR_FOLLOWS));
     uint64_t array_length = 0;
-    size_t read_bytes;
+    size_t read_bytes = 0;
 
     if (is_indefinite){
         log_debug("not supported");

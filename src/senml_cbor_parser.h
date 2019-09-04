@@ -68,7 +68,7 @@ class SenMLCborParser: public SenMLBaseParser {
     {
         const bool is_indefinite = (peekChar() == (CBOR_MAP | CBOR_VAR_FOLLOWS));
         uint64_t map_length = 0;
-        size_t read_bytes;
+        size_t read_bytes = 0;
 
         if (is_indefinite){
             log_debug("not supported");

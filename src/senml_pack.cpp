@@ -265,7 +265,7 @@ int SenMLPack::toCbor(char *dest, int length, SenMLStreamMethod format)
 
 int SenMLPack::contentToCbor()
 {
-    int length = cbor_serialize_map(this->getFieldLength());
+    /*int length =*/ cbor_serialize_map(this->getFieldLength());
 
     int res = this->fieldsToCbor();
     SenMLBase *next = this->_start;

@@ -45,7 +45,7 @@ class SenMLRecord: public SenMLBase
         /**
          * create a SenMLRecord object.
          */
-        SenMLRecord(): _unit(SENML_UNIT_NONE), _time(NAN), _updateTime(0){};
+        SenMLRecord(): _time(NAN), _updateTime(0), _name(""), _unit(SENML_UNIT_NONE){};
 
         /**
          * create a SenMLRecord object.
