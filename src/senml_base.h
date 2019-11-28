@@ -35,7 +35,7 @@ friend class SenMLJsonListener;
 friend class SenMLBaseParser;
 public:
     SenMLBase();
-    ~SenMLBase();
+    virtual ~SenMLBase();
 
     /** get the next item in the list.
      * @returns: a pointer to the next SenMLBase object in the list or NULL when at the end of the list.
