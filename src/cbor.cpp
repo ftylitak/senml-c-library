@@ -226,7 +226,7 @@ size_t decode_int(uint64_t *val)
 
 static size_t encode_bytes(unsigned char major_type, const char *data, size_t length)
 {
-    uint_bytes_follow(uint_additional_info(length)) + 1;
+    uint_bytes_follow(uint_additional_info(length)) + 1;  // Unused code. should it change?
     size_t bytes_start = encode_int(major_type, (uint64_t) length);
 
     if (!bytes_start) {
