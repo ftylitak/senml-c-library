@@ -24,6 +24,7 @@
 class SenMLIntRecord: public SenMLRecordTemplate<int>
 {
 public:
+    SenMLIntRecord();
     SenMLIntRecord(const char* name);
     SenMLIntRecord(const char* name, SenMLUnit unit);
     SenMLIntRecord(const char* name, SenMLUnit unit, int value):  SenMLRecordTemplate(name, unit, value){};

@@ -18,6 +18,10 @@
 #include <senml_double_pack.h> 
 #include <senml_int_pack.h> 
 
+SenMLFloatRecord::SenMLFloatRecord(): SenMLRecordTemplate()
+{
+}
+
 SenMLFloatRecord::SenMLFloatRecord(const char* name): SenMLRecordTemplate(name)
 {
 }

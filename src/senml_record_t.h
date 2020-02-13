@@ -27,6 +27,7 @@ template <class T>
 class SenMLRecordTemplate: public SenMLRecord
 {
 public:
+    SenMLRecordTemplate(): SenMLRecord(), _valAsSum(false){};
     SenMLRecordTemplate(const char* name): SenMLRecord(name), _valAsSum(false){};
     SenMLRecordTemplate(const char* name, SenMLUnit unit):  SenMLRecord(name, unit), _valAsSum(false){};
     SenMLRecordTemplate(const char* name, SenMLUnit unit, T value):  SenMLRecord(name, unit), _value(value), _valAsSum(false) {};
@@ -111,6 +112,13 @@ public:
         this->_valAsSum = asSum;
         return this->setTime(time);
     };
+
+    void update(const char* name, SenMLUnit unit, T value) 
+    {
+        this->setName(name);
+        this->setUnit(unit);
+        this->set(value);
+    }
 
 protected:
 

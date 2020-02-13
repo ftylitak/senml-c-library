@@ -24,6 +24,7 @@
 class SenMLBoolRecord: public SenMLRecordTemplate<bool>
 {
 public:
+    SenMLBoolRecord();
     SenMLBoolRecord(const char* name);
     SenMLBoolRecord(const char* name, SenMLUnit unit);
     SenMLBoolRecord(const char* name, SenMLUnit unit, bool value):  SenMLRecordTemplate(name, unit, value){};

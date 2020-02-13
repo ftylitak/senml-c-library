@@ -24,6 +24,7 @@
 class SenMLStringRecord: public SenMLRecordTemplate<String>
 {
 public:
+    SenMLStringRecord():  SenMLRecordTemplate(){};
     SenMLStringRecord(const char* name):  SenMLRecordTemplate(name){};
     SenMLStringRecord(const char* name, SenMLUnit unit):  SenMLRecordTemplate(name, unit){};
     SenMLStringRecord(const char* name, SenMLUnit unit, const char* value):  SenMLRecordTemplate(name, unit, value){};

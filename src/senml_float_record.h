@@ -24,6 +24,7 @@
 class SenMLFloatRecord: public SenMLRecordTemplate<float>
 {
 public:
+    SenMLFloatRecord();
     SenMLFloatRecord(const char* name);
     SenMLFloatRecord(const char* name, SenMLUnit unit);
     SenMLFloatRecord(const char* name, SenMLUnit unit, float value):  SenMLRecordTemplate(name, unit, value){};

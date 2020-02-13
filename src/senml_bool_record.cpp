@@ -16,6 +16,10 @@
 #include <cbor.h>
 #include <senml_helpers.h>
 
+SenMLBoolRecord::SenMLBoolRecord(): SenMLRecordTemplate()
+{
+}
+
 SenMLBoolRecord::SenMLBoolRecord(const char* name): SenMLRecordTemplate(name)
 {
 }

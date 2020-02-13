@@ -17,6 +17,10 @@
 #include <senml_int_pack.h> 
 #include <senml_double_pack.h> 
 
+SenMLIntRecord::SenMLIntRecord(): SenMLRecordTemplate()
+{
+}
+
 SenMLIntRecord::SenMLIntRecord(const char* name): SenMLRecordTemplate(name)
 {
 }
